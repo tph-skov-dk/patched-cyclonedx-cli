@@ -25,19 +25,16 @@ dotnet build
 cd -
 ```
 
-3. build cyclonedx-cli
+3. build cyclonedx-cli as a self-contained exe
 
 ```sh
-cd cyclonedx-cli/src/cyclonedx
-dotnet build
-cd -
+dotnet publish cyclonedx-cli/src/cyclonedx -o release -p:PublishSingleFile=true --self-contained true
+cp release/cyclonedx.exe .
+rm -r release
 ```
 
-4. the built executable should now be present in `cyclonedx-cli/src/cyclonedx/bin/*/*/cyclonedx.exe` and can be ran
+4. run cyclonedx
 
 ```sh
-# either
-./cyclonedx-cli/src/cyclonedx/bin/*/*/cyclonedx.exe (...args)
-# or
-./run.sh (...args)
+./cyclonedx.exe
 ```
