@@ -11,4 +11,4 @@ cd cyclonedx-cli/src/cyclonedx
 dotnet build
 cd -
 
-cp cyclonedx-cli/src/cyclonedx/bin/*/*/cyclonedx.exe .
+./run.sh --version
