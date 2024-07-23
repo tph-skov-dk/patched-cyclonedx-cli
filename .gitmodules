@@ -1,0 +1,6 @@
+[submodule "cyclonedx-cli"]
+	path = cyclonedx-cli
+	url = https://github.com/tph-skov-dk/cyclonedx-cli
+[submodule "cyclonedx-dotnet-library"]
+	path = cyclonedx-dotnet-library
+	url = https://github.com/tph-skov-dk/cyclonedx-dotnet-library
